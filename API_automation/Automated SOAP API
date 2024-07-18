@@ -1,1 +1,18 @@
+Created Postman SOAP API requests using body from https://www.dataaccess.com/webservicesserver/Numberconversion.wso?op=NumberToWords
 
+Created different test cases under this project
+
+Install the Newman , HTML Reporter via the
+Run the Code in the Newman(Postman Commandline and Create HTML Report
+Install the NodeJS - ﻿nodejs.org/en/download/package-manager
+Go the Terminal
+node --version
+npm --version
+newman commandline tool to run the postman collection
+npm install -g newman
+newman --version
+npm install -g newman-reporter-htmlextra
+
+
+Run the API using the below command and get the report. API link you can copy paste from Postman by right clicking and using SHARE VIA API option
+newman run "https://api.postman.com/collections/611814-4f11ca41-cb4a-459f-8f12-e13fea08db9a\?access_key\=PMAT-01J2T40MJZ1ZPF0K7F5FPCJ3TF" -r cli,htmlextra
